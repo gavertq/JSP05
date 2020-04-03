@@ -25,7 +25,6 @@ ul li{display:inline; margin-right:50px; margin-bottom: 10px;}
 				<li><a href="main.jsp">Home</a>
 				</li><li><a href="memberInfo.jsp">회원 정보</a></li>
 				
-				
 				<c:choose>		
 					<c:when test="${sessionScope.loginSuccess == 'Yes' }">
 					<li><a href="logout.jsp">로그아웃</a></li>
