@@ -66,21 +66,21 @@
 	--%>
 
 <hr>
-	<c:set var="mySession" value="kakaka" scope="session"/>	
-	<!-- <c:remove var="mySession"/> -->
-	<a href="el01.jsp">Move to el01</a>	
+	<c:set var="mySession" value="kakaka" scope="session"/>	<!-- 세션 추가 -->
+	<a href="el01.jsp">el01.jsp로 이동</a>	
+	<c:remove var="mySession"/> <!--  세션 제거-->
 	
 <hr>
 	<c:set var="test" value="one"/>
 	<c:choose>
-		<c:when test="${test == 'one' }"> <!-- like 'if else' -->
-			<b>test == one</b>
+		<c:when test="${test == 'one' }"> <!-- 'if else'문과 같은 기능 -->
+			<b>변수 test는 one과 같다</b>
 		</c:when> 
 		<c:when test="${test == 'two' }">
-			<b>test == two</b>
+			<b>변수 test는 two와 같다</b>
 		</c:when>
-		<c:otherwise>	<!-- like 'else' -->
-			<b>no</b>
+		<c:otherwise>	<!-- 'else'문과 같은 기능 -->
+			<b>같은 비교 대상이 없다</b>
 		</c:otherwise>
 	</c:choose>
 	
