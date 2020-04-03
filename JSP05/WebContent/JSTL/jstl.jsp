@@ -1,6 +1,8 @@
 <%@page import="java.util.ArrayList"%>
+
 <%@taglib uri = "http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	<!-- 경로연결해야 사용가능. prefix의 c는 core기능을 쓸때 붙일 이름. 만일 이름을 cd라고하면 아래 사용한 c도 cd라고 해야 한다 -->
+	
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
